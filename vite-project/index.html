@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" src="./Logic.js"></script>
+    <link rel="stylesheet" type="text/css" href="reg.css" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration</h1>
+    <div class="formating">
+      <form id="registration-form">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required />
+        <p id="email-error" class="error">Введіть коректний e-mail</p>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required />
+        <p id="password-error" class="error">
+          Пароль має бути щонайменше 5 символів, містити велику літеру та число
+        </p>
+
+        <label for="confirm-pass">Підтвердження паролю:</label>
+        <input type="password" id="confirm-pass" required />
+        <p id="confirm-password-error" class="error">
+          Пароль та підтвердження паролю не співпадають
+        </p>
+        <label>
+          <input type="checkbox" id="terms" />
+
+          I agree to the terms of the license agreement
+        </label>
+
+        <button id="submit" disabled>Send</button>
+      </form>
+    </div>
+    <script type="module" src="/src/registration.js"></script>
+  </body>
+</html>
